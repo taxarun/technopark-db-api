@@ -1,4 +1,3 @@
-# import os
 import json
 from django.http import JsonResponse
 from django.http import HttpRequest
@@ -7,18 +6,14 @@ import mysql.connector.pooling
 import ResponseCode
 from datetime import datetime
 
-# MySQL connection
-# connector = mysql.connector.connect(user='root', password='',
-#                                     host='127.0.0.1',
-#                                     database='technoForum')
-
-# mysql.connector.Connect
+# database = "technoForum"
+database = "technoTest"
 
 cnxpool = mysql.connector.pooling.MySQLConnectionPool(pool_name="mypool",
                                                       pool_size=32,
                                                       user='root', password='',
                                                       host='127.0.0.1',
-                                                      database='technoForum')
+                                                      database=database)
 
 
 # General usage methods
@@ -57,7 +52,7 @@ def status(request):
         cursor = connector.cursor(buffered=True, dictionary=True)
         query = ("SELECT TABLE_NAME, table_rows "
                  "FROM INFORMATION_SCHEMA.TABLES "
-                 "WHERE TABLE_SCHEMA = 'technoForum';")
+                 "WHERE TABLE_SCHEMA = '" + database + "';")
         cursor.execute(query)
         for row in cursor:
             tableName = row['TABLE_NAME']
