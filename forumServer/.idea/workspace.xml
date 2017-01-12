@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d4bf4b16-132a-43b4-91d1-686dda87df96" name="Default" comment="" />
+    <ignored path="forumServer.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="forumServer" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dbHandler.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="623" column="39" selection-start-line="623" selection-start-column="39" selection-end-line="623" selection-end-column="39" />
+              <folding>
+                <element signature="e#12#23#0" expanded="true" />
+                <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+                <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+                <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+                <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+                <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+                <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+                <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+                <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+                <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+                <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+                <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+                <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+                <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+                <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+                <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+                <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+                <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+                <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+                <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+                <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+                <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+                <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+                <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+                <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+                <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+                <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+                <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+                <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+                <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+                <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+                <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+                <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseCode.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forumServer/ResponseCode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forumServer/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1290">
+              <caret line="86" column="43" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/forumServer/settings.py" />
+        <option value="$PROJECT_DIR$/../../../Беспилотник/server.py" />
+        <option value="$PROJECT_DIR$/forumServer/urls.py" />
+        <option value="$PROJECT_DIR$/forumServer/ResponseCode.py" />
+        <option value="$PROJECT_DIR$/forumServer/dbHandler.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Django</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8NamingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Беспилотник/server.py" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunManager" selected="Django server.forumServer">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="forumServer" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="forumServer" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="forumServer.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="forumServer" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Django server.forumServer" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4bf4b16-132a-43b4-91d1-686dda87df96" name="Default" comment="" />
+      <created>1478082893217</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1478082893217</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2584814" sideWeight="0.49452055" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30136988" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45068493" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27948305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6150685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25444266" sideWeight="0.50547945" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29178083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="110" y="143" width="1060" height="484" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="32" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#23#0" expanded="true" />
+            <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+            <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+            <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+            <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+            <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+            <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+            <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+            <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+            <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+            <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+            <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+            <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#23#0" expanded="true" />
+            <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+            <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+            <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+            <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+            <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+            <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+            <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+            <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+            <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+            <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+            <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+            <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#23#0" expanded="true" />
+            <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+            <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+            <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+            <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+            <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+            <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+            <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+            <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+            <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+            <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+            <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+            <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#23#0" expanded="true" />
+            <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+            <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+            <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+            <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+            <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+            <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+            <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+            <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+            <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+            <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+            <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+            <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7350">
+          <caret line="495" column="52" selection-start-line="495" selection-start-column="52" selection-end-line="495" selection-end-column="52" />
+          <folding>
+            <element signature="e#12#23#0" expanded="true" />
+            <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+            <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+            <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+            <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+            <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+            <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+            <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+            <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+            <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+            <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+            <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+            <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Беспилотник/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/mysql/connector/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7605">
+          <caret line="511" column="0" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#23#0" expanded="true" />
+            <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+            <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+            <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+            <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+            <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+            <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+            <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+            <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+            <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+            <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+            <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+            <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#23#0" expanded="true" />
+            <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+            <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+            <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+            <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+            <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+            <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+            <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+            <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+            <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+            <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+            <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+            <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2dad3854-7c0c-4f73-ab23-a7ada4eb8bfa/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2dad3854-7c0c-4f73-ab23-a7ada4eb8bfa/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Беспилотник/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/mysql/connector/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="511" column="0" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/Django-1.9.6-py2.7.egg/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/Django-1.9.6-py2.7.egg/django/http/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="365" column="0" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="337" column="0" selection-start-line="337" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/Django-1.9.6-py2.7.egg/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/mysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/ResponseCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forumServer/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="623" column="39" selection-start-line="623" selection-start-column="39" selection-end-line="623" selection-end-column="39" />
+          <folding>
+            <element signature="e#12#23#0" expanded="true" />
+            <marker date="1484240740000" expanded="true" signature="1054:1081" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="1888:2023" ph="SELECT TABLE... TABLES" />
+            <marker date="1484240740000" expanded="true" signature="3748:3926" ph="INSERT INTO Users... " />
+            <marker date="1484240740000" expanded="true" signature="5209:5733" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="6813:6911" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="7025:7145" ph="INSERT INTO Followers... " />
+            <marker date="1484240740000" expanded="true" signature="7257:7348" ph="UPDATE Users... " />
+            <marker date="1484240740000" expanded="true" signature="8200:8984" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="8200:8986" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9756" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="9110:9894" ph="SELECT thatU... Users" />
+            <marker date="1484240740000" expanded="true" signature="12424:12543" ph="INSERT INTO Forums... " />
+            <marker date="1484240740000" expanded="true" signature="13855:13917" ph="SELECT * FRO... Forums" />
+            <marker date="1484240740000" expanded="true" signature="15223:15252" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15895" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="15223:15897" ph="SELECT Users... Users" />
+            <marker date="1484240740000" expanded="true" signature="20839:21157" ph="INSERT INTO Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21616" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="21591:21662" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="22819:22872" ph="SELECT * FRO... Posts" />
+            <marker date="1484240740000" expanded="true" signature="25249:25294" ph="SELECT * fro... PostsWHERE" />
+            <marker date="1484240740000" expanded="true" signature="25249:25295" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="27421:27478" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28612" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28626" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28666" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="28571:28667" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="29828:29901" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="31284:31500" ph="INSERT INTO Threads... " />
+            <marker date="1484240740000" expanded="true" signature="32288:32512" ph="SELECT * FRO... Threads" />
+            <marker date="1484240740000" expanded="true" signature="32288:32552" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="35399:35470" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36261:36332" ph="UPDATE Posts... " />
+            <marker date="1484240740000" expanded="true" signature="36783:36886" ph="INSERT INTO Subscriptions... " />
+            <marker date="1484240740000" expanded="true" signature="37234:37321" ph="DELETE FROM " />
+            <marker date="1484240740000" expanded="true" signature="38056:38154" ph="UPDATE Threa... " />
+            <marker date="1484240740000" expanded="true" signature="39624:39832" ph="SELECT Threa... Threads" />
+            <marker date="1484240740000" expanded="true" signature="42899:42964" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="43887:43906" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44495" ph="SELECT * fro... Posts" />
+            <marker date="1484240740000" expanded="true" signature="44476:44541" ph="SELECT * fro... Posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

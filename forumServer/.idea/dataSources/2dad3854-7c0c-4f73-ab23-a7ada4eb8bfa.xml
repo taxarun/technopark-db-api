@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - technoForum@127.0.0.1">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="technoForum">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="Cinics_Data_Base"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="test"/>
+    <table id="7" parent="1" name="Followers"/>
+    <table id="8" parent="1" name="Forums"/>
+    <table id="9" parent="1" name="Posts"/>
+    <table id="10" parent="1" name="Users"/>
+    <column id="11" parent="7" name="follower">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="12" parent="7" name="followee">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <index id="13" parent="7" name="follower_UNIQUE">
+      <columns>follower
+followee</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="14" parent="7" name="follower_UNIQUE">
+      <columns>follower
+followee</columns>
+      <underlying-index>follower_UNIQUE</underlying-index>
+    </key>
+    <column id="15" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="16" parent="8" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="17" parent="8" name="short_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="18" parent="8" name="user">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <index id="19" parent="8" name="name_UNIQUE">
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="20" parent="8" name="short_name_UNIQUE">
+      <columns>short_name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="21" parent="8" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="22" parent="8" name="name_UNIQUE">
+      <columns>name</columns>
+      <underlying-index>name_UNIQUE</underlying-index>
+    </key>
+    <key id="23" parent="8" name="short_name_UNIQUE">
+      <columns>short_name</columns>
+      <underlying-index>short_name_UNIQUE</underlying-index>
+    </key>
+    <column id="24" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="25" parent="9" name="date">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="26" parent="9" name="forum">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="27" parent="9" name="message">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="28" parent="9" name="parent">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="29" parent="9" name="thread">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="30" parent="9" name="user">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="31" parent="9" name="isApproved">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="32" parent="9" name="isDeleted">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="33" parent="9" name="isEdited">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="34" parent="9" name="isHighlighted">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="35" parent="9" name="isSpam">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <key id="36" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="37" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="38" parent="10" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="39" parent="10" name="about">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="40" parent="10" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="41" parent="10" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="42" parent="10" name="isAnonymous">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="43" parent="10" name="email_UNIQUE">
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="44" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="45" parent="10" name="email_UNIQUE">
+      <columns>email</columns>
+      <underlying-index>email_UNIQUE</underlying-index>
+    </key>
+  </database-model>
+</dataSource>
