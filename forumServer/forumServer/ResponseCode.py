@@ -16,7 +16,7 @@ def notValidQuery(err_str="The query isn't valid"):
 
 def wrongQuery(sqlError="The query isn't correct"):
     data = {"code": 3, "response": sqlError}
-    print (sqlError)
+    # print (sqlError)
     return data
 
 
