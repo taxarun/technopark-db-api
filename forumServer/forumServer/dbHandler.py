@@ -164,7 +164,7 @@ def getUserInfo(request):
                     "LEFT JOIN Followers as Followees ON email = Followees.follower "
                     "LEFT JOIN Subscriptions ON user = email "
                     "WHERE email like %s "
-                    "GROUP BY email")
+                    "GROUP BY Users.id, Users.username, Users.about, Users.name, Users.email, Users.isAnonymous")
         cursor.execute(get_user % ('"' + email + '"'))
         for row in cursor:
             data = row
@@ -285,7 +285,9 @@ def getFollowersOrFollowee(request, query):
     try:
         if since_id is not None:
             query += ("AND thatUsers.id >= " + since_id + " ")
-        query += ("GROUP BY thatUsers.email ORDER BY thatUsers.name " + sortOrder + " ")
+        query += ("GROUP BY thatUsers.id, thatUsers.username, thatUsers.about, "
+                  "thatUsers.name, thatUsers.email, thatUsers.isAnonymous "
+                  "ORDER BY thatUsers.name " + sortOrder + " ")
         if limit is not None:
             query += ("LIMIT " + limit)
         connector = cnxpool.get_connection()
@@ -440,7 +442,8 @@ def forumUserList(request):
                  "WHERE Forums.short_name = %s ")
         if since_id is not None:
             query += ("AND Users.id >= " + since_id + " ")
-        query += ("GROUP BY Users.email ORDER BY Users.name " + sortOrder + " ")
+        query += ("GROUP BY Users.id, Users.username, Users.about, Users.name, Users.email, Users.isAnonymous "
+                  "ORDER BY Users.name " + sortOrder + " ")
         if limit is not None:
             query += ("LIMIT " + limit)
         connector = cnxpool.get_connection()
@@ -513,7 +516,9 @@ def forumThreadList(request):
         if since is not None:
             query += ("AND Threads.date >= '" + since + "' ")
         query += ("AND Threads.isDeleted = 0 "
-                  "GROUP BY Threads.date "
+                  "GROUP BY Threads.id, Threads.forum, Threads.title, Threads.user, Threads.date, "
+                  "Threads.message, Threads.slug, Threads.isClosed, Threads.isDeleted, "
+                  "Threads.likes, Threads.dislikes "
                   "ORDER BY Threads.date " + sortOrder + " ")
         if limit is not None:
             query += ("LIMIT " + limit)
@@ -1016,8 +1021,10 @@ def threadDetails(request):
                  "FROM Threads "
                  "LEFT JOIN Posts ON Posts.thread = Threads.id AND Posts.isDeleted = 0 "
                  "WHERE Threads.id = %s "
-                 "GROUP BY Threads.date")
-        cursor.execute(query % ('"' + str(thread_id) + '"'))
+                 "GROUP BY Threads.id, Threads.forum, Threads.title, Threads.user, Threads.date, "
+                 "Threads.message, Threads.slug, Threads.isClosed, Threads.isDeleted, "
+                 "Threads.likes, Threads.dislikes ")
+        cursor.execute(query % (str(thread_id)))
         for row in cursor:
             data = row
             data["points"] = data["likes"] - data["dislikes"]
@@ -1238,7 +1245,9 @@ def threadList(request):
                  "WHERE " + paramName + " like '" + param + "' ")
         if since is not None:
             query += ("AND Threads.date >= '" + since + "' ")
-        query += ("GROUP BY Threads.date "
+        query += ("GROUP BY Threads.id, Threads.forum, Threads.title, Threads.user, Threads.date, "
+                  "Threads.message, Threads.slug, Threads.isClosed, Threads.isDeleted, "
+                  "Threads.likes, Threads.dislikes "
                   "ORDER BY Threads.date " + sortOrder + " ")
         if limit is not None:
             query += ("LIMIT " + limit)
