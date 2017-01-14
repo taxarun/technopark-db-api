@@ -6,8 +6,8 @@ import mysql.connector.pooling
 import ResponseCode
 from datetime import datetime
 
-database = "technoForum"
-# database = "technoTest"
+# database = "technoForum"
+database = "technoTest"
 
 cnxpool = mysql.connector.pooling.MySQLConnectionPool(pool_name="mypool",
                                                       pool_size=32,
@@ -512,7 +512,7 @@ def forumThreadList(request):
                  "WHERE Threads.forum like '" + forum + "' ")
         if since is not None:
             query += ("AND Threads.date >= '" + since + "' ")
-        query += ("AND Threads.isDeleted = 0 AND Threads.isDeleted = 0 "
+        query += ("AND Threads.isDeleted = 0 "
                   "GROUP BY Threads.date "
                   "ORDER BY Threads.date " + sortOrder + " ")
         if limit is not None:
@@ -1238,8 +1238,7 @@ def threadList(request):
                  "WHERE " + paramName + " like '" + param + "' ")
         if since is not None:
             query += ("AND Threads.date >= '" + since + "' ")
-        query += ("AND Threads.isDeleted = 0 "
-                  "GROUP BY Threads.date "
+        query += ("GROUP BY Threads.date "
                   "ORDER BY Threads.date " + sortOrder + " ")
         if limit is not None:
             query += ("LIMIT " + limit)
