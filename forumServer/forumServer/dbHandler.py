@@ -515,8 +515,7 @@ def forumThreadList(request):
                  "WHERE Threads.forum like '" + forum + "' ")
         if since is not None:
             query += ("AND Threads.date >= '" + since + "' ")
-        query += ("AND Threads.isDeleted = 0 "
-                  "GROUP BY Threads.id, Threads.forum, Threads.title, Threads.user, Threads.date, "
+        query += ("GROUP BY Threads.id, Threads.forum, Threads.title, Threads.user, Threads.date, "
                   "Threads.message, Threads.slug, Threads.isClosed, Threads.isDeleted, "
                   "Threads.likes, Threads.dislikes "
                   "ORDER BY Threads.date " + sortOrder + " ")
