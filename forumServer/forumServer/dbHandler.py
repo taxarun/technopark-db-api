@@ -6,8 +6,8 @@ import mysql.connector.pooling
 import ResponseCode
 from datetime import datetime
 
-# database = "technoForum"
-database = "technoTest"
+database = "technoForum"
+# database = "technoTest"
 
 cnxpool = mysql.connector.pooling.MySQLConnectionPool(pool_name="mypool",
                                                       pool_size=32,
@@ -509,10 +509,12 @@ def forumThreadList(request):
         query = ("SELECT Threads.*, COUNT(CASE WHEN Posts.isDeleted = 0 "
                  "THEN 1 ELSE NULL END) as posts FROM Threads "
                  "LEFT JOIN Posts ON Posts.thread = Threads.id "
-                 "WHERE Threads.forum like '" + forum + "' AND Threads.isDeleted = 0 ")
+                 "WHERE Threads.forum like '" + forum + "' ")
         if since is not None:
             query += ("AND Threads.date >= '" + since + "' ")
-        query += ("GROUP BY Threads.id ORDER BY Threads.date " + sortOrder + " ")
+        query += ("AND Threads.isDeleted = 0 AND Threads.isDeleted = 0 "
+                  "GROUP BY Threads.date "
+                  "ORDER BY Threads.date " + sortOrder + " ")
         if limit is not None:
             query += ("LIMIT " + limit)
         cursor.execute(query)
@@ -699,11 +701,14 @@ def postList(param, val, get_data, related):
         except ValueError:
             return JsonResponse(ResponseCode.notValidQuery())
     resp = {}
+    forumRelated = None
+    threadRelated = None
+    userRelated = None
     try:
         connector = cnxpool.get_connection()
         cursor = connector.cursor(buffered=True, dictionary=True)
         query = ("SELECT * from Posts "
-                 "WHERE " + param + " like '" + val + "' ")
+                 "WHERE " + param + " = '" + val + "' ")
         if since is not None:
             query += ("AND date >= '" + since + "' ")
         query += ("ORDER BY date " + sortOrder + " ")
@@ -715,15 +720,28 @@ def postList(param, val, get_data, related):
             post = row
             post["points"] = post["likes"] - post["dislikes"]
             del post["PATH"]
+            # related for FORUM ONLY. This means we require data for forum
             if related:
                 if 'forum' in related:
-                    fakeRequest = HttpRequest()
-                    fakeRequest.GET["forum"] = post["forum"]
-                    post["forum"] = getForumObject(fakeRequest)["response"]
+                    if forumRelated is None:
+                        fakeRequest = HttpRequest()
+                        fakeRequest.GET["forum"] = post["forum"]
+                        forumRelated = getForumObject(fakeRequest)["response"]
+                    post["forum"] = forumRelated
                 if 'thread' in related:
+                    # if threadRelated is None:
+                    #     threadRelated = getRelatedThreads(val)
+                    # post["thread"] = threadRelated[post["thread"]]
                     fakeRequest = HttpRequest()
                     fakeRequest.GET["thread"] = post["thread"]
                     post["thread"] = threadDetails(fakeRequest)["response"]
+                if 'user' in related:
+                    # if userRelated is None:
+                    #     userRelated = getRelatedUsers(val)
+                    # post["user"] = userRelated[post["user"]]
+                    fakeRequest = HttpRequest()
+                    fakeRequest.GET["user"] = post["user"]
+                    post["user"] = getUserInfo(fakeRequest)
             data.append(post)
     except mysql.connector.Error as err:
         resp = ResponseCode.wrongQuery(str(err))
@@ -736,6 +754,69 @@ def postList(param, val, get_data, related):
             except:
                 resp = ResponseCode.notFound()
     return JsonResponse(resp)
+
+
+def getRelatedThreads(forum):
+    data = {}
+    try:
+        connector = cnxpool.get_connection()
+        cursor = connector.cursor(buffered=True, dictionary=True)
+        # query = ("SELECT Threads.*, COUNT(CASE WHEN Posts.isDeleted = 0 "
+        #          "THEN 1 ELSE NULL END) as posts FROM Threads "
+        #          "LEFT JOIN Posts ON Posts.thread = Threads.id "
+        #          "WHERE Threads.forum = '" + forum + "' "
+        #          "GROUP BY Threads.id ")
+        query = ("SELECT Threads.*, COUNT(Posts.id) as posts "
+                 "FROM Threads "
+                 "LEFT JOIN Posts ON Posts.thread = Threads.id AND Posts.isDeleted = 0 "
+                 "WHERE Threads.forum = '" + forum + "' "
+                 "GROUP BY Threads.date")
+        cursor.execute(query)
+        for row in cursor:
+            row["points"] = row["likes"] - row["dislikes"]
+            data[row["id"]] = row
+    finally:
+        cursor.close()
+        connector.close()
+    return data
+
+
+def getRelatedUsers(forum):
+    data = {}
+    try:
+        connector = cnxpool.get_connection()
+        cursor = connector.cursor(buffered=True, dictionary=True)
+        query = ("SELECT Users.*, GROUP_CONCAT(DISTINCT Followers.follower) as followers, "
+                 "GROUP_CONCAT(DISTINCT Subscriptions.thread) as subscriptions, "
+                 "GROUP_CONCAT(DISTINCT Followees.followee) as following FROM Users "
+                 "LEFT JOIN Followers ON email = followee "
+                 "LEFT JOIN Followers as Followees ON email = Followees.follower "
+                 "LEFT JOIN Subscriptions ON user = email "
+                 "JOIN Posts ON Posts.user = Users.email "
+                 "WHERE forum = '" + forum + "' "
+                 "GROUP BY email")
+        cursor.execute(query)
+        for row in cursor:
+            followers = row["followers"]
+            following = row["following"]
+            subscriptions = row["subscriptions"]
+            if followers is None:
+                row["followers"] = []
+            else:
+                row["followers"] = followers.split(',')
+            if following is None:
+                row["following"] = []
+            else:
+                row["following"] = following.split(',')
+            if subscriptions is None:
+                row["subscriptions"] = []
+            else:
+                row["subscriptions"] = map(int, subscriptions.split(','))
+            data[row["email"]] = row
+    finally:
+        cursor.close()
+        connector.close()
+    return data
 
 
 def postRemove(request):
@@ -926,11 +1007,16 @@ def threadDetails(request):
     try:
         connector = cnxpool.get_connection()
         cursor = connector.cursor(dictionary=True)
-        query = ("SELECT Threads.*, COUNT(CASE WHEN Posts.isDeleted = 0 "
-                 "THEN 1 ELSE NULL END) as posts FROM Threads "
-                 "LEFT JOIN Posts ON Posts.thread = Threads.id "
+        # query = ("SELECT Threads.*, COUNT(CASE WHEN Posts.isDeleted = 0 "
+        #          "THEN 1 ELSE NULL END) as posts FROM Threads "
+        #          "LEFT JOIN Posts ON Posts.thread = Threads.id "
+        #          "WHERE Threads.id = %s "
+        #          "GROUP BY Threads.id ")
+        query = ("SELECT Threads.*, COUNT(Posts.id) as posts "
+                 "FROM Threads "
+                 "LEFT JOIN Posts ON Posts.thread = Threads.id AND Posts.isDeleted = 0 "
                  "WHERE Threads.id = %s "
-                 "GROUP BY Threads.id ")
+                 "GROUP BY Threads.date")
         cursor.execute(query % ('"' + str(thread_id) + '"'))
         for row in cursor:
             data = row
@@ -1149,10 +1235,11 @@ def threadList(request):
         query = ("SELECT Threads.*, COUNT(CASE WHEN Posts.isDeleted = 0 "
                  "THEN 1 ELSE NULL END) as posts FROM Threads "
                  "LEFT JOIN Posts ON Posts.thread = Threads.id "
-                 "WHERE " + paramName + " like '" + param + "' AND Threads.isDeleted = 0 ")
+                 "WHERE " + paramName + " like '" + param + "' ")
         if since is not None:
             query += ("AND Threads.date >= '" + since + "' ")
-        query += ("GROUP BY Threads.id "
+        query += ("AND Threads.isDeleted = 0 "
+                  "GROUP BY Threads.date "
                   "ORDER BY Threads.date " + sortOrder + " ")
         if limit is not None:
             query += ("LIMIT " + limit)
@@ -1236,7 +1323,7 @@ def getThreadPosts(request):
                 print (limit)
                 query = ("SELECT * from Posts "
                          "WHERE PATH like '" + str(parent["PATH"]) + "%' AND parent is not null "
-                         "AND " + param + " like '" + val + "' AND " + param + " like '" + val + "' ")
+                         "AND " + param + " = '" + val + "' ")
                 del parent["PATH"]
                 data.append(parent)
                 limit -= 1
@@ -1257,7 +1344,7 @@ def getThreadPosts(request):
         elif sort == 'parent_tree':
             parents = []
             query = ("SELECT * from Posts "
-                     "WHERE " + param + " like '" + val + "' AND parent is null ")
+                     "WHERE " + param + " = '" + val + "' AND parent is null ")
             if since is not None:
                 query += ("AND date >= '" + since + "' ")
             query += ("ORDER BY PATH " + sortOrder + " ")
@@ -1271,7 +1358,7 @@ def getThreadPosts(request):
             for parent in parents:
                 query = ("SELECT * from Posts "
                          "WHERE PATH like '" + str(parent["PATH"]) + "%' AND parent is not null "
-                         "AND " + param + " like '" + val + "' ")
+                         "AND " + param + " = '" + val + "' ")
                 if since is not None:
                     query += ("AND date >= '" + since + "' ")
                 query += ("ORDER BY PATH " + sortOrder + " ")

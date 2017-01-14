@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="mail.ru_machine">
+    <serverData>
+      <paths name="mail.ru_machine">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/tpadmin/taxarun/pyCharm" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
